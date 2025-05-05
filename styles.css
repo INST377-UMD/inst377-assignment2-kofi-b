@@ -1,0 +1,202 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    background-color: #f0f0f0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+nav li:hover {
+    background-color: #ddd;
+}
+
+/* Button Styles */
+.custom-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.custom-button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Audio Instructions Styles */
+#audio-instructions {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+/* Stocks Page Styles */
+#top-stocks {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#top-stocks th, #top-stocks td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#top-stocks th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#top-stocks tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#top-stocks tr:hover {
+    background-color: #f1f1f1;
+}
+
+/*Dog Carousel */
+#dog-carousel {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slider img {
+    max-height: 400px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+#breed-info {
+    margin: 20px auto;
+    width: 80%;
+}
+
+#breed-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#breed-info th, #breed-info td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#breed-info th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #000;
+}
+
+.slick-prev {
+    left: -25px;
+}
+
+.slick-next {
+    right: -25px;
+}
+
+/* Homepage Styles */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+h1 {
+    color: #333;
+}
+
+.quote-box {
+    background-color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote-box p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Media Queries for Responsive Design (this i had to look up) */
+@media (max-width: 768px) {
+    #top-stocks {
+        width: 90%;
+    }
+    .slider img {
+        max-height: 300px;
+    }
+    #dog-carousel {
+        max-width: 90%;
+    }
+    .quote-box {
+        max-width: 90%;
+    }
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+    <h1>Dogs Page</h1>
+    <div id="dog-carousel" class="slider"></div>
+    <h2>Dog Breeds</h2>
+    <div id="breed-buttons"></div>
+    <div id="breed-info" style="display: none;">
+        <h3 id="breed-name"></h3>
+        <p id="breed-description"></p>
+        <p>Min Life: <span id="breed-min-life"></span></p>
+        <p>Max Life: <span id="breed-max-life"></span></p>
+    </div>
+    <div id="audio-instructions">
+        <p>Voice Commands:</p>
+        <ul>
+            <li>"Hello" - Shows a greeting</li>
+            <li>"Change the color to <color>" - Changes background color</li>
+            <li>"Navigate to <page>" - Goes to that page</li>
+            <li>"Load Dog Breed <breed>" - Shows breed info</li>
+        </ul>
+        <button id="start-audio">Turn On Audio</button>
+        <button id="stop-audio">Turn Off Audio</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

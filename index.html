@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+    <div class="content-container">
+        <h1>Home Page</h1>
+        <div class="quote-box">
+            <p id="quote"></p>
+        </div>
+        <div class="button-container">
+            <button class="custom-button"><a href="stocks.html">Stocks</a></button>
+            <button class="custom-button"><a href="dogs.html">Dogs</a></button>
+        </div>
+    </div>
+    <div id="audio-instructions">
+        <p>Voice Commands:</p>
+        <ul>
+            <li>"Hello" - Shows a greeting</li>
+            <li>"Change the color to <color>" - Changes background color</li>
+            <li>"Navigate to <page>" - Goes to that page</li>
+        </ul>
+        <button id="start-audio">Turn On Audio</button>
+        <button id="stop-audio">Turn Off Audio</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
